@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geología UCT Plan 3</title>
+    <link rel="stylesheet" href="Malla.css"> <!-- Enlace a tu archivo de estilos -->
+</head>
+<body>
+    <header>
+        <h1>Geología UCT Plan 3</h1>
+    </header>
+    <div class="semester-grid">
+        <!-- Semestre 1 -->
+        <div class="semester">
+            <h2>Semestre 1</h2>
+            <div class="course" data-prereqs="none">
+                <input type="checkbox" id="course1" name="course1">
+                <label for="course1">GEOLOGIA GENERAL (GEOL1101)</label>
+            </div>
+            <div class="course" data-prereqs="none">
+                <input type="checkbox" id="course2" name="course2">
+                <label for="course2">INTRODUCCIÓN A LAS MATEMÁTICAS (GEOL1102)</label>
+            </div>
+            <div class="course" data-prereqs="none">
+                <input type="checkbox" id="course3" name="course3">
+                <label for="course3">FUNDAMENTOS DE QUÍMICA (GEOL1103)</label>
+            </div>
+            <div class="course" data-prereqs="none">
+                <input type="checkbox" id="course4" name="course4">
+                <label for="course4">INGLÉS PARA GEOLOGÍA (GEOL1104)</label>
+            </div>
+            <div class="course" data-prereqs="none">
+                <input type="checkbox" id="course5" name="course5">
+                <label for="course5">GEOMETRÍA DESCRIPTIVA (GEOL1105) </label>
+            </div>
+        </div>
+        <!-- Semestre 2 -->
+        <div class="semester">
+            <h2>Semestre 2</h2>
+            <div class="course" data-prereqs="course3,course5">
+                <input type="checkbox" id="course7" name="course7" disabled>
+                <label for="course7">MINERALOGÍA Y CRISTALOGRAFÍA (GEOL1106)</label>
+            </div>
+            <div class="course" data-prereqs="course1,course3">
+                <input type="checkbox" id="course8" name="course8" disabled>
+                <label for="course8">INTRODUCCIÓN A LA GEOQUÍMICA (GEOL1107)</label>
+            </div>
+            <div class="course" data-prereqs="course2">
+                <input type="checkbox" id="course9" name="course9" disabled>
+                <label for="course9">ALGEBRA LINEAL (GEOL1108)</label>
+            </div>
+            <div class="course" data-prereqs="course2">
+                <input type="checkbox" id="course10" name="course10" disabled>
+                <label for="course10">CÁLCULO I (GEOL1109)</label>
+            </div>
+            <div class="course" data-prereqs="course4">
+                <input type="checkbox" id="course11" name="course11" disabled>
+                <label for="course11">COMUNICACIÓN EN LAS CIENCIAS (GEO1110)</label>
+            </div>
+            <div class="course" data-prereqs="course2">
+                <input type="checkbox" id="course12" name="course12" disabled>
+                <label for="course12">FISICA NEWTONIANA (GEOL1111)</label>
+            </div>
+        </div>
+        <!-- Semestre 3 -->
+        <div class="semester">
+            <h2>Semestre 3</h2>
+            <div class="course" data-prereqs="course7">
+                <input type="checkbox" id="course13" name="course13">
+                <label for="course13">MINERALOGÍA ÓPTICA (GEOL1112)</label>
+            </div>
+            <div class="course" data-prereqs="course8">
+                <input type="checkbox" id="course14" name="course14">
+                <label for="course14">GEOQUÍMICA ENDÓGENA (GEOL1113)</label>
+            </div>
+            <div class="course" data-prereqs="course9,course10">
+                <input type="checkbox" id="course15" name="course15">
+                <label for="course15">ECUACIONES DIFERENCIALES (GEOL1114)</label>
+            </div>
+            <div class="course" data-prereqs="course10">
+                <input type="checkbox" id="course16" name="course16">
+                <label for="course16">TERMODINÁMICA (GEOL1115)</label>
+            </div>
+            <div class="course" data-prereqs="course10">
+                <input type="checkbox" id="course17" name="course17">
+                <label for="course17">CÁLCULO II (GEOL1116)</label>
+            </div>
+            <div class="course" data-prereqs="course8">
+                <input type="checkbox" id="course" name="course">
+                <label for="course17">Paleontología (GEOL1117)</label>
+            </div>
+            <div class="course" data-prereqs="course1">
+                <input type="checkbox" id="course18" name="course18">
+                <label for="course18">ELECTIVO ANTROPOLOGICO (ELAC)</label>
+            </div>
+        </div>
+         <!-- Semestre 4 -->
+         <div class="semester">
+            <h2>Semestre 4</h2>
+            <div class="course" data-prereqs="course13,course14">
+                <input type="checkbox" id="course19" name="course19">
+                <label for="course19">FUNDAMENTO DE PETROLOGÍA (GEOL1118)</label>
+            </div>
+            <div class="course" data-prereqs="course1,course5">
+                <input type="checkbox" id="course20" name="course20">
+                <label for="course20">CARTOGRAFÍA APLICADA A GEOLOGÍA (GEOL1119)</label>
+            </div>
+            <div class="course" data-prereqs="course14,course16">
+                <input type="checkbox" id="course21" name="course21">
+                <label for="course21">GEOQUÍMICA EXOGENA (GEOL1102)</label>
+            </div>
+            <div class="course" data-prereqs="course12">
+                <input type="checkbox" id="course22" name="course22">
+                <label for="course22">ONDAS Y ELECTROMAGNETISMO (GEOL1121)</label>
+            </div>
+            <div class="course" data-prereqs="course14">
+                <input type="checkbox" id="course23" name="course23">
+                <label for="course23">SEDIMENTOLOGÍA (GEOL1122)</label>
+            </div>
+            <div class="course" data-prereqs="course15,course10">
+                <input type="checkbox" id="course24" name="course24">
+                <label for="course24">PROGRAMACIÓN Y MANEJO DE DATOS DE GEOCIENCIAS (GEOL1123)</label>
+            </div>
+        </div>
+         <!-- Semestre 5 -->
+         <div class="semester">
+            <h2>Semestre 5</h2>
+            <div class="course" data-prereqs="course19">
+                <input type="checkbox" id="course25" name="course25">
+                <label for="course25">PETROLOGÍA ÍGNEA Y METAMÓRFICA (GEOL1124)</label>
+            </div>
+            <div class="course" data-prereqs="course20,course24">
+                <input type="checkbox" id="course26" name="course26">
+                <label for="course26">TELEDETECCIÓN Y MODELAMIENTO DE DATOS CIENTÍFICOS (GEOL1125)</label>
+            </div>
+            <div class="course" data-prereqs="course9,course17">
+                <input type="checkbox" id="course27" name="course27">
+                <label for="course27">ESTADÍSTICA Y PROBABILIDADES (GEOL1126)</label>
+            </div>
+            <div class="course" data-prereqs="course23,course22">
+                <input type="checkbox" id="course28" name="course28">
+                <label for="course28">ESTRATIGRAFÍA (GEOL1127)</label>
+            </div>
+            <div class="course" data-prereqs="course">
+                <input type="checkbox" id="course29" name="course29">
+                <label for="course29">GEOFÍSICA (GEOL1128)</label>
+            </div>
+            <div class="course" data-prereqs="course23,course1,course20">
+                <input type="checkbox" id="course29" name="course29">
+                <label for="course29">ELECTIVO PARA LA DIVERSIDAD I (EI1)</label>
+            </div>
+        </div>
+         <!-- Semestre 6 -->
+         <div class="semester">
+            <h2>Semestre 6</h2>
+            <div class="course" data-prereqs="course25,course28">
+                <input type="checkbox" id="course30" name="course30">
+                <label for="course30">GEOLOGÍA ESTRUCTURAL (GEOL1130)</label>
+            </div>
+            <div class="course" data-prereqs="course29">
+                <input type="checkbox" id="course31" name="course31">
+                <label for="course31">GEOFÍSICA APLICADA (GEOL1131)</label>
+            </div>
+            <div class="course" data-prereqs="course26,course28">
+                <input type="checkbox" id="course32" name="course32">
+                <label for="course32">INTRODUCCIÓN A GEOLOGÍA DE CAMPO (GEOL1132)</label>
+            </div>
+            <div class="course" data-prereqs="course21,course25">
+                <input type="checkbox" id="course33" name="course33">
+                <label for="course33">YACIMIENTOS MINERALES (GEOL1133)</label>
+            </div>
+            <div class="course" data-prereqs="course23,course26">
+                <input type="checkbox" id="course34" name="course34">
+                <label for="course34">GEOMORFOLOGÍA (GEOL1134)</label>
+            </div>
+            <div class="course" data-prereqs="course1,course2,course3,course4,course5,course7,course8,course9,course10,course11,course13,course14,course15,course16,course17,course18,course19,course20,course21,course22,course23,course24,course25,course26,course27,course28,course29">
+                <input type="checkbox" id="course35" name="course35">
+                <label for="course35">OPTATIVO DE PROFUNDIZACION (OPR_GEOL1)</label>
+            </div>
+        </div>
+         <!-- Semestre 7 -->
+         <div class="semester">
+            <h2>Semestre 7</h2>
+            <div class="course" data-prereqs="course27">
+                <input type="checkbox" id="course36" name="course36">
+                <label for="course36">ECONOMÍA GENERAL (GEOL1135)</label>
+            </div>
+            <div class="course" data-prereqs="course30,course31">
+                <input type="checkbox" id="course37" name="course37">
+                <label for="course37">GEOLOGÍA HISTÓRICA Y GEOTECTÓNICA (GEO1136)</label>
+            </div>
+            <div class="course" data-prereqs="course30,course32,course34">
+                <input type="checkbox" id="course38" name="course38">
+                <label for="course38">GEOLOGÍA DE CAMPO I (GEOL1137)</label>
+            </div>
+            <div class="course" data-prereqs="course33,course28">
+                <input type="checkbox" id="course39" name="course39">
+                <label for="course39">MODELAMIENYO Y EV. RECURSOS MINERALES INDUSTRIALES (GEOL1138)</label>
+            </div>
+            <div class="course" data-prereqs="course28,course21">
+                <input type="checkbox" id="course40" name="course40">
+                <label for="course40">HIDROGEOLOGÍA (GEOL1139)</label>
+            </div>
+            <div class="course" data-prereqs="course1">
+                <input type="checkbox" id="course41" name="course41">
+                <label for="course41">ELECTIVO TEOLOGICO (ELTE)</label>
+            </div>
+        </div>
+         <!-- Semestre 8 -->
+         <div class="semester">
+            <h2>Semestre 8</h2>
+            <div class="course" data-prereqs="course37,course38">
+                <input type="checkbox" id="course42" name="course42">
+                <label for="course42">GEOLOGÍA DE CHILE (GEOL1140)</label>
+            </div>
+            <div class="course" data-prereqs="course38">
+                <input type="checkbox" id="course43" name="course43">
+                <label for="course43">VOLCANOLOGÍA (GEOL1141)</label>
+            </div>
+            <div class="course" data-prereqs="course38,course40">
+                <input type="checkbox" id="course44" name="course44">
+                <label for="course44">GEOLOGÍA AMBIENTA (GEOL1142) </label>
+            </div>
+            <div class="course" data-prereqs="course27,course39">
+                <input type="checkbox" id="course45" name="course45">
+                <label for="course45">GEOESTADÍSTICA (GEOL1143)</label>
+            </div>
+            <div class="course" data-prereqs="course25,course26,course27,course28,course29">
+                <input type="checkbox" id="course46" name="course46">
+                <label for="course46">PRÁCTICA INICIAL(GEOL1144)</label>
+            </div>
+            <div class="course" data-prereqs="course39">
+                <input type="checkbox" id="course47" name="course47">
+                <label for="course47">ELECTIVO PARA LA DIVERSIDAD II (EL2)</label>
+            </div>
+        </div>
+         <!-- Semestre 9 -->
+         <div class="semester">
+            <h2>Semestre 9</h2>
+            <div class="course" data-prereqs="course42,course43">
+                <input type="checkbox" id="course48" name="course48">
+                <label for="course48">GEOLOGÍA DE CAMPO II (GEOL1145)</label>
+            </div>
+            <div class="course" data-prereqs="course30,course40">
+                <input type="checkbox" id="course49" name="course49">
+                <label for="course49">GEOLOGÍA INGENERIL (GEOL1146)</label>
+            </div>
+            <div class="course" data-prereqs="course42,course43,course44,course45,course46">
+                <input type="checkbox" id="course50" name="course50">
+                <label for="course50">METODOLOGÍA DE INVESTIGACIÓN (GEOL1147)</label>
+            </div>
+            <div class="course" data-prereqs="course39,course42">
+                <input type="checkbox" id="course51" name="course51">
+                <label for="course51">GEOLOGÍA ECONÓMICA (GEOL1148)</label>
+            </div>
+            <div class="course" data-prereqs="course36">
+                <input type="checkbox" id="course52" name="course52">
+                <label for="course52">EVALUACIÓN DE PROYECTOS (GEOL1149)</label>
+            </div>
+            <div class="course" data-prereqs="none">
+                <input type="checkbox" id="course53" name="course53">
+                <label for="course53">ELECTIVO PARA LA DIVERSIDAD III (EL3)</label>
+            </div>
+
+        </div>
+             <!-- Semestre 10 -->
+        <div class="semester">
+            <h2>Semestre 10</h2>
+            <div class="course" data-prereqs="course48,course50">
+                <input type="checkbox" id="course54" name="course54">
+                <label for="course54">PROYECTO DE TÍTULO (GEOL1150)</label>
+            </div>
+            <div class="course" data-prereqs="course48,course49,course50,course51,course52">
+                <input type="checkbox" id="course55" name="course55">
+                <label for="course55">PRÁCTICA PROFESIONAL (GEOL1151)</label>
+            </div>
+            <div class="course" data-prereqs="course42,course41">
+                <input type="checkbox" id="course56" name="course56">
+                <label for="course56">OPTATIVO PROFESIONALES (OPR_GEOL2)</label>
+            </div>
+            <div class="course" data-prereqs="none">
+                <input type="checkbox" id="course57" name="course57">
+                <label for="course57">ÉTICA PROFESIONAL (IET1433)</label>
+            </div>
+        </div>
+        <div class="color-index">
+            <div class="color-item completed">Aprobados</div>
+            <div class="color-item available">Disponible</div>
+            <div class="color-item not-available">No Disponible</div>
+        </div>
+
+
+    </div>
+    <script src="Malla.js"></script>
+    
+</body>
+</html>
